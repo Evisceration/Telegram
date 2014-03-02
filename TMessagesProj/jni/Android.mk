@@ -1,10 +1,13 @@
+APP_PLATFORM := android-9
+APP_ABI := armeabi armeabi-v7a x86
 NDK_TOOLCHAIN_VERSION := 4.8
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := tmessages
-LOCAL_CFLAGS = -w -std=gnu99 -O3
+LOCAL_MODULE := libtmessages
+LOCAL_CFLAGS := -w -std=gnu99 -O3
 LOCAL_LDLIBS := -llog
+LOCAL_LDFLAGS := -ldl
 
 LOCAL_SRC_FILES :=  \
 ./aes_core.c \

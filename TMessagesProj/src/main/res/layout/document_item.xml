@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:ellipsize="marquee"
             android:singleLine="true"
-            android:text="TextView"
+            android:text="@string/non_textview"
             android:textColor="#000"
             android:textSize="18dp"
             android:layout_gravity="top|left"/>
@@ -48,7 +48,7 @@
             android:layout_marginTop="2dp"
             android:ellipsize="marquee"
             android:singleLine="true"
-            android:text="TextView"
+            android:text="@string/non_textview"
             android:textColor="#a6a6a6"
             android:textSize="16dp"
             android:layout_gravity="top|left"/>
